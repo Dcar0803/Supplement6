@@ -4,6 +4,13 @@ import java.util.List;
 
 public class ListSorter {
 	
+	  /**
+     * Sorts a list of integers in ascending order.
+     *
+     * @param numbers the list of integers
+     * @return a new list sorted in ascending order
+     */
+	
     public static List<Integer> sortListAscending(List<Integer> numbers) {
         
     	List<Integer> sortedList = new ArrayList<>(numbers);

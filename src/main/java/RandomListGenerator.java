@@ -5,6 +5,13 @@ import java.util.Random;
 
 public class RandomListGenerator {
 	
+	/**
+     * Generates a random list of integers.
+     *
+     * @param size the size of the list to generate
+     * @return a list of random integers
+     */
+	
 	public static List<Integer> generateRandomList(int size) {
 		
         List<Integer> randomList = new ArrayList<>();

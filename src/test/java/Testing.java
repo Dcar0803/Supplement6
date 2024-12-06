@@ -43,5 +43,29 @@ class Testing {
         assertTrue(emptyOccurrences.isEmpty(), "The map should be empty for an empty input list");
     
 	}//end of testMapOccurrences
+	
+	 @Test
+	    public void testSortListAscending() {
+		 
+		 List<Integer> unsortedList = List.of(5, 3, 8, 1, 2);
+	        List<Integer> sortedList = ListSorter.sortListAscending(unsortedList);
+	        List<Integer> expectedList = List.of(1, 2, 3, 5, 8);
+
+	        
+	        assertEquals(expectedList, sortedList, "The list should be sorted in ascending order");
+
+	       
+	        assertNotEquals(unsortedList, sortedList, "The original list should remain unchanged");
+
+	        
+	        List<Integer> emptyList = Collections.emptyList();
+	        List<Integer> sortedEmptyList = ListSorter.sortListAscending(emptyList);
+	        assertTrue(sortedEmptyList.isEmpty(), "Sorting an empty list should return an empty list");
+
+	      
+	        List<Integer> singleElementList = List.of(42);
+	        List<Integer> sortedSingleElementList = ListSorter.sortListAscending(singleElementList);
+	        assertEquals(singleElementList, sortedSingleElementList, "A single-element list should remain unchanged");
+	    }//end of testSortListingAscending
 
 }//end of testing class

@@ -4,6 +4,13 @@ import java.util.Map;
 
 public class IntegerOccurrencesMapper {
 	
+	  /**
+     * Maps integers in a list to their number of occurrences.
+     *
+     * @param numbers the list of integers
+     * @return a map where the key is the integer, and the value is its count
+     */
+	
     
 	public static Map<Integer, Integer> mapOccurrences(List<Integer> numbers) {
         
